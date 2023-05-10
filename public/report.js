@@ -1,6 +1,6 @@
 async function getReport(){
     const token = localStorage.getItem("id");
-    const res = await axios.get(`http://localhost:3000/expense/get-report`, {
+    const res = await axios.get(`http://13.232.122.59:3000/expense/get-report`, {
       headers: { Authorization: token },
     });
     // clearList('table-body');

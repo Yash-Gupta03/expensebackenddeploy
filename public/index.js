@@ -22,7 +22,7 @@ async function signupdata() {
 
   // Post request to the server to store user details
   try{
-    const response =  await axios.post(`http://localhost:3000/user/sign-up`, obj)
+    const response =  await axios.post(`http://13.232.122.59:3000/user/sign-up`, obj)
     if(response.status == 200){
       console.log(response.data.message);
       const message = response.data.message;

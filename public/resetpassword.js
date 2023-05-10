@@ -2,7 +2,7 @@ function resetpassword(event){
     event.preventDefault();
     const id = req.headers('id')
     const pass = document.getElementById('password').value;
-    const res = axios.post(`http://localhost:3000/user/resetpassword`, {pass}, {headers:{
+    const res = axios.post(`http://13.232.122.59:3000/user/resetpassword`, {pass}, {headers:{
         id:id,
     }});
     if(res.status == 200){

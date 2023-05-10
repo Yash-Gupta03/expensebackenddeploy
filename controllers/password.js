@@ -40,7 +40,7 @@ transEmailApi.sendTransacEmail({
     sender,
     to:receivers,
     subject:'reset your password',
-    textContent:`http://localhost:${port}/password/resetpassword/${senduuid}`,
+    textContent:`http://13.232.122.59:${port}/password/resetpassword/${senduuid}`,
 }).then((response)=>{
     console.log(res);
     res.status(200).json('Email Sent');
